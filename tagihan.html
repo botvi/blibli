@@ -374,9 +374,9 @@
         </header>
 
         <div class="bill-card">
-            <div class="bill-status overdue-badge" id="id-bill-status" style="background: rgba(224, 32, 32, 0.1); color: var(--danger-red);">⚠️ TERLAMBAT 548 HARI</div>
-            <div class="bill-amount-label">Total Tagihan (Jatuh tempo 14 Apr 2026)</div>
-            <div class="bill-amount-total" id="id-main-amount">Rp 5.525.800</div>
+            <div class="bill-status" id="id-bill-status" style="background: rgba(39, 174, 96, 0.1); color: var(--success-green);">✅ LUNAS</div>
+            <div class="bill-amount-label">Total Tagihan</div>
+            <div class="bill-amount-total" id="id-main-amount" style="color: var(--success-green);">Rp 0</div>
 
             <div class="divider"></div>
 
@@ -393,29 +393,9 @@
                 <span class="bill-summary-value">Rp 535.000</span>
             </div>
 
-            <div class="alert-box" style="margin-bottom: 20px;">
-                <div class="alert-icon">!</div>
-                <div class="alert-text">Akun Anda telah ditangguhkan sementara karena keterlambatan pembayaran.</div>
-            </div>
-
-            <!-- Threatening Risk Section -->
-            <div style="background: #FFF0F0; border: 1px solid #FFDada; border-radius: 12px; padding: 15px;">
-                <h3
-                    style="color: var(--danger-red); font-size: 0.85rem; font-weight: 800; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01" />
-                    </svg>
-                    Peringatan & Resiko Fatal
-                </h3>
-                <ul
-                    style="margin: 0; padding-left: 18px; font-size: 0.75rem; color: #8B0000; font-weight: 500; display: flex; flex-direction: column; gap: 6px;">
-                    <li>Pelaporan data ke **SLIK OJK (Kolektibilitas 5 - Macet)**.</li>
-                    <li>Pendelegasian penagihan ke **Tim Lapangan (DC)** untuk kunjungan ke alamat rumah/kantor.</li>
-                    <li>Pembekuan permanen akun Blibli & layanan ekosistem terkait.</li>
-                    <li>Potensi penyelesaian melalui jalur **Tindakan Hukum/Perdata**.</li>
-                </ul>
+            <div class="alert-box" style="margin-bottom: 20px; background: #e8f5e9; border-color: #c8e6c9;">
+                <div class="alert-icon" style="background: var(--success-green); color: white;">✓</div>
+                <div class="alert-text" style="color: var(--success-green);">Terima kasih, semua tagihan Anda sudah lunas.</div>
             </div>
         </div>
 
@@ -485,8 +465,7 @@
 
             <div class="section-header">
                 <h2 class="section-title">Semua Angsuran</h2>
-                <span style="font-size: 0.8rem; font-weight: 600; color: var(--success-green);">5 Lunas / 7
-                    Nunggak</span>
+                <span style="font-size: 0.8rem; font-weight: 600; color: var(--success-green);">12 Lunas</span>
             </div>
 
             <div class="installment-list">
@@ -584,75 +563,44 @@
                     </div>
                 </div>
 
-                <!-- Overdue Months 10-12 -->
-                <div class="installment-item" style="border-left: 4px solid var(--danger-red); background: #fff8f8;">
+                <!-- Paid Months 10-12 -->
+                <div class="installment-item">
                     <div class="inst-left">
                         <span class="inst-label">Bulan ke-10</span>
                         <span class="inst-date">05 Feb 2025</span>
                     </div>
                     <div class="inst-right">
-                        <span class="inst-amount">Rp 535.000 <span style="color:var(--danger-red); font-size: 0.7rem;">+
-                                Rp 900.000</span></span>
-                        <p class="inst-status status-overdue">MELEWATI BATAS</p>
+                        <span class="inst-amount">Rp 535.000</span>
+                        <p class="inst-status status-paid">LUNAS</p>
                     </div>
                 </div>
-                <div class="installment-item" style="border-left: 4px solid var(--danger-red); background: #fff8f8;">
+                <div class="installment-item">
                     <div class="inst-left">
                         <span class="inst-label">Bulan ke-11</span>
                         <span class="inst-date">05 Mar 2025</span>
                     </div>
                     <div class="inst-right">
-                        <span class="inst-amount">Rp 535.000 <span style="color:var(--danger-red); font-size: 0.7rem;">+
-                                Rp 850.000</span></span>
-                        <p class="inst-status status-overdue">MELEWATI BATAS</p>
+                        <span class="inst-amount">Rp 535.000</span>
+                        <p class="inst-status status-paid">LUNAS</p>
                     </div>
                 </div>
-                <div class="installment-item" style="border-left: 4px solid var(--danger-red); background: #fff8f8;">
+                <div class="installment-item">
                     <div class="inst-left">
                         <span class="inst-label">Bulan ke-12</span>
                         <span class="inst-date">05 Apr 2025</span>
                     </div>
                     <div class="inst-right">
-                        <span class="inst-amount">Rp 535.000 <span style="color:var(--danger-red); font-size: 0.7rem;">+
-                                Rp 845.800</span></span>
-                        <p class="inst-status status-overdue">MELEWATI BATAS</p>
+                        <span class="inst-amount">Rp 535.000</span>
+                        <p class="inst-status status-paid">LUNAS</p>
                     </div>
                 </div>
             </div>
 
-            <div class="breakdown-card">
-                <h3 style="font-size: 0.9rem; margin-bottom: 15px; font-weight: 700;">Akumulasi Keterlambatan</h3>
-                <div class="breakdown-item">
-                    <span>Pokok Menunggak (3 x 535rb)</span>
-                    <span style="font-weight: 600;">Rp 1.605.000</span>
-                </div>
-                <div class="divider" style="background: #e9ecef; height: 1px;"></div>
-                <div class="breakdown-item">
-                    <span>Total Hari Terlambat</span>
-                    <span style="font-weight: 600; color: var(--danger-red);">± 548 Hari</span>
-                </div>
-                <div class="breakdown-item">
-                    <span>Denda & Bunga Terakumulasi</span>
-                    <span style="font-weight: 600;">Rp 2.595.800</span>
-                </div>
-                <div class="breakdown-item">
-                    <span>Biaya Admin & Penagihan</span>
-                    <span style="font-weight: 600;">Rp 1.325.000</span>
-                </div>
-                <div class="breakdown-item total-large"
-                    style="margin-top: 15px; padding-top: 15px; border-top: 2px dashed #ddd; font-weight: 800;">
-                    <span>Total Harus Dibayar</span>
-                    <span>Rp 5.525.800</span>
-                </div>
-                <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 10px; font-style: italic;">
-                    *Denda dihitung sejak jatuh tempo pertama (05 Okt 2024).
-                </div>
-            </div>
+
         </section>
 
         <div class="bottom-actions">
-            <button class="btn-support" id="btn-support">Bantuan</button>
-            <button class="btn-pay" id="btn-pay-now">Bayar Sekarang</button>
+            <button class="btn-support" id="btn-support" style="flex: 1;">Bantuan</button>
         </div>
     </div>
 
